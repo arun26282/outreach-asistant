@@ -5,8 +5,7 @@ const LoadingSequence = () => {
         "Connecting to target server...",
         "Scraping website architecture...",
         "Extracting core value propositions...",
-        "Feeding data to Gemini AI...",
-        "Drafting hyper-personalized pitch... almost there!" // Added a little flavor to the final state
+        "Almost there!"
     ];
 
     const [index, setIndex] = useState(0);
