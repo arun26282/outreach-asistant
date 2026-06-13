@@ -91,7 +91,7 @@ const Index = () => {
                     <div className="flex justify-center mb-6">
                         <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold border border-blue-100">
                             <Sparkles className="w-4 h-4 mr-2" />
-                            1-Click Outreach
+                            1-Click Outreach AI Assistant
                         </div>
                     </div>
 
