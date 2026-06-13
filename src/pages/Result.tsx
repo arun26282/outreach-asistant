@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CheckCircle2, Copy, Globe, Heading1, Heading2, Mail, Text, RotateCcw } from 'lucide-react';
 
+// Define the shape of the data coming from your Express backend
 export interface AnalysisData {
     success: boolean;
     preview: {
@@ -14,7 +15,7 @@ export interface AnalysisData {
 
 interface AnalysisResultProps {
     data: AnalysisData;
-    onReset: () => void;
+    onReset: () => void; // Function to clear the results and go back
 }
 
 const AnalysisResult: React.FC<AnalysisResultProps> = ({ data, onReset }) => {
@@ -41,6 +42,7 @@ const AnalysisResult: React.FC<AnalysisResultProps> = ({ data, onReset }) => {
                     </div>
                 </div>
                 
+                {/* Start Over Button */}
                 <button 
                     onClick={onReset}
                     className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors bg-white px-4 py-2 rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50"
@@ -51,6 +53,7 @@ const AnalysisResult: React.FC<AnalysisResultProps> = ({ data, onReset }) => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                {/* Left Column: Scraped Data Audit */}
                 <div className="lg:col-span-5 flex flex-col space-y-4">
                     <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex-1">
                         <h3 className="text-lg font-semibold text-gray-900 mb-6 flex items-center">
