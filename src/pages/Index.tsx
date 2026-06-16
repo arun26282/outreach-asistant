@@ -30,7 +30,7 @@ const Index = () => {
     const [error, setError] = useState('');
     const [resultData, setResultData] = useState<AnalysisData | null>(null);
 
-    const demoUrls = ["nuweb.in", "apex-marketing.com", "elevate-digital.io"];
+    const demoUrls = ["google.com", "facebook.com", "github.com"];
 
     const handleUrlChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setUrl(e.target.value);
